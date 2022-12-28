@@ -3,7 +3,11 @@
 # Use official node image as the base image
 FROM node:18 as build
 # Set the working directory
+RUN pwd
+RUN ls
 WORKDIR /app
+RUN pwd
+RUN ls
 COPY . .
 RUN npm install
 # Generate the build of the application
