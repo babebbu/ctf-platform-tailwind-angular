@@ -1,0 +1,44 @@
+#markdown {
+  pre:has(> code) {
+    background: #1f2937;
+    padding: 18px;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #d1d5db;
+    font-family: 'Sarabun', sans-serif;
+  }
+  h1 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+  h2 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+  h3 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+  h4 {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
+  h5 {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
+  h6 {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+  }
+  hr {
+    margin: 12px 0;
+    border-color: #6b7280;
+  }
+  p {
+    margin-bottom: 16px;
+    font-family: 'Sarabun', sans-serif;
+  }
+}

@@ -1,0 +1,21 @@
+<div class="hidden lg:flex dark:text-white dark:bg-neutral-900 justify-between py-3 px-5 items-center border-b border-b-neutral-800">
+  <div class="flex items-center">
+    <a class="text-xl inline-block mr-3">Cyber Security Challenge</a>
+    <div class="flex gap-1">
+      <a class="hover:bg-orange-600 px-3 py-2 rounded" routerLink=".">Dashboard</a>
+      <a class="hover:bg-orange-600 px-3 py-2 rounded" routerLink="challenges">Challenges</a>
+      <a class="hover:bg-orange-600 px-3 py-2 rounded" routerLink="shop">Secret Shop</a>
+      <a class="hover:bg-orange-600 px-3 py-2 rounded" routerLink="inventory">Inventory</a>
+      <a class="hover:bg-orange-600 px-3 py-2 rounded" routerLink="team">Team</a>
+      <a class="hover:bg-orange-600 px-3 py-2 rounded" routerLink="summary">Summary</a>
+    </div>
+  </div>
+  <div>
+    <fa-icon icon="angle-left"></fa-icon> Back to Platform
+  </div>
+</div>
+
+<app-event-header></app-event-header>
+<div class="mx-auto px-6 md:px-12 lg:px-12 text-white py-7 md:py-14">
+  <router-outlet></router-outlet>
+</div>

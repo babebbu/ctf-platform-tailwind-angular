@@ -1,0 +1,12 @@
+<div class="fixed w-full h-full top-0 left-0 transition-all z-50"
+     *ngIf="open"
+     @animate
+     (click)="close()">
+  <div class="fixed w-full h-full top-0 left-0 bg-neutral-900 bg-opacity-90 transition-all z-50"></div>
+  <div class="relative max-w-2xl md:h-auto mx-auto z-50"
+       *ngIf="open"
+       @animate2
+       (click)="$event.stopPropagation()">
+    <ng-content></ng-content>
+  </div>
+</div>

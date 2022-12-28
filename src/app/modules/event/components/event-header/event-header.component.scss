@@ -1,0 +1,17 @@
+.timer-slot {
+  width: 60px;
+}
+
+.timer-slot-divider {
+  margin-top: -25px;
+}
+
+.timer-slot-divider.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {color: white}
+  50% {color: transparent}
+  100% {color: white}
+}
