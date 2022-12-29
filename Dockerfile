@@ -34,8 +34,7 @@ RUN ls
 #TODO: Correct this line, /app/dist has ctf-platform
 COPY --from=build /app/dist /usr/share/nginx/html
 RUN rm -f /usr/share/nginx/html/index.html
-COPY --from=build /app/dist/*/* /usr/share/nginx/html
-COPY --from=build /app/dist/*/.* /usr/share/nginx/html
+RUN cp -rf /usr/share/nginx/html/*/* /usr/share/nginx/html
 
 EXPOSE 8080:8080
 CMD ["nginx", "-g", "daemon off;"]
