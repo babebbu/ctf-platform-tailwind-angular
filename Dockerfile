@@ -23,7 +23,7 @@ FROM nginx:latest
 # NOTE: This path may change according to your project's output folder 
 RUN rm -f /usr/share/nginx/html/index.html
 COPY --from=build /app/dist/* /usr/share/nginx/html
-COPY nginx.conf  /etc/nginx/conf.d/default.conf
+COPY nginx.conf  /etc/nginx/nginx.conf
 # Exposing a port, here it means that inside the container 
 # the app will be using Port 80 while running
 EXPOSE 80
